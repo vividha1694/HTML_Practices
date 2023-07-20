@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .tag {
+              background-color: palevioletred;
+              color: white;
+              padding: 15px;
+            } 
+            </style>
+    </head>
+<body>
+
+<h2 style="background-color: blueviolet;">Class Attribute in JavaScript</h2>
+<p></p>
+
+<button onclick="myFunction()">Hide element</button>
+
+<h2 class="tag">HTML</h2>
+<p>HTML is the standard markup language for creating Web pages</p>
+
+<h2 class="tag">CLASSES</h2>
+<p>The HTML class attribute is used to specify a class for an HTML element.
+    Multiple HTML elements can share the same class.</p>
+
+<h2 class="tag">ID</h2>
+<p>The HTML id attribute is used to specify a unique id for an HTML element.
+    You cannot have more than one element with the same id in an HTML document.</p>
+
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("tag");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
