@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <h1>JavaScript</h1>
+
+
+
+  <img id="myImage" src="D:\images\pinkflower.jpg" width="200" height="180">
+
+  <p>
+    <button type="button" onclick="rose(1)">Red</button>
+    <button type="button" onclick="rose(0)">Pink</button>
+  </p>
+  <script>
+    function rose(sw) {
+      var pic;
+      if (sw == 0) {
+        pic = "D:/images/pinkflower.jpg";
+      } else {
+        pic = "D:/images/redflower.jpg";
+      }
+      document.getElementById('myImage').src = pic;
+    }
+  </script>
+</body>
+
+</html>
