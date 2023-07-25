@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Select Element</h2>
+
+<form action="/action_page.php">
+  <label for="state">Choose the state :</label>
+  <select id="state" name="state" >
+    <option value="chhattisgarh">chhattisgarh</option>
+    <option value="madhya pradesh">Madhya Pradesh</option>
+    <option value="maharashtra" selected>Maharashtra</option>
+    <option value="gujarat">Gujarat</option>
+  </select>
+  <input type="submit">
+</form> 
+<br>
+<br>
+<form action="/action_page.php">
+    <label for="state">Choose the state :</label>
+    <select id="state" name="state" size="2" >
+      <option value="chhattisgarh">chhattisgarh</option>
+      <option value="madhya pradesh">Madhya Pradesh</option>
+      <option value="maharashtra" >Maharashtra</option>
+      <option value="gujarat">Gujarat</option>
+    </select>
+    <input type="submit">
+  </form>
+  <br>
+  <br>
+<form action="/action_page.php">
+    <fieldset>
+        <legend>Details:</legend>
+    <label for="fanme">First name:</label>
+    <input type="text" id="frame" name="fname" value=""><br><br>
+    <label for="lname">last name:</label>
+    <input type="text" id="lname" name="lname" value=""><br><br>
+    <input type="submit" value="submit">
+    </fieldset>
+</form>
+<br>
+<br>
+<form action="/action_page.php">
+    <input list="languages" name="languages">
+    <datalist id="languages">
+      <option value="Html">
+      <option value="JavaScript">
+      <option value="Python">
+      <option value="C++">
+    </datalist>
+    <input type="submit">
+  </form>
+  <br>
+  <br>
+  <form action="/action_page.php">
+    <textarea name="message" style="width:150px; height:100px;">message</textarea>
+    <br>
+    <input type="submit">
+  </form>
+
+</body>
+</html>
